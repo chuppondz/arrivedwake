@@ -15,7 +15,7 @@ class PlaceResult {
 /// ถ้าจะขึ้น production ที่มีผู้ใช้เยอะ ควรเปลี่ยนไปใช้ Google Places / Mapbox
 /// หรือเซิร์ฟเวอร์ Nominatim ของตัวเอง
 class GeocodingService {
-  static const _userAgent = 'destination_alarm/1.0 (com.example.destination_alarm)';
+  static const _userAgent = 'arrivedwake/1.0 (com.arrivedwake.app)';
 
   Future<List<PlaceResult>> search(String query) async {
     if (query.trim().isEmpty) return [];

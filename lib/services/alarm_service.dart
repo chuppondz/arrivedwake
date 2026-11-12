@@ -17,7 +17,7 @@ class AlarmService {
   static final AlarmService instance = AlarmService._();
 
   static const _alarmNotificationId = 1001;
-  static const _channelId = 'destination_alarm_ring';
+  static const _channelId = 'arrivedwake_ring';
 
   final _notifications = FlutterLocalNotificationsPlugin();
   final _player = AudioPlayer();

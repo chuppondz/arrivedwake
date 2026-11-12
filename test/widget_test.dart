@@ -1,4 +1,4 @@
-import 'package:destination_alarm/models/destination.dart';
+import 'package:arrivedwake/models/destination.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

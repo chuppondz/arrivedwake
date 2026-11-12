@@ -1,6 +1,6 @@
 {
-    "name": "destination_alarm",
-    "short_name": "destination_alarm",
+    "name": "ArrivedWake",
+    "short_name": "ArrivedWake",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

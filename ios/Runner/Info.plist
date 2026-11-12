@@ -16,7 +16,7 @@
 		<string>audio</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>ปลุกเมื่อใกล้ถึง</string>
+	<string>ArrivedWake</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,7 +24,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>destination_alarm</string>
+	<string>ArrivedWake</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

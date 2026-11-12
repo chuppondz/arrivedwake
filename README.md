@@ -1,6 +1,6 @@
-# ปลุกเมื่อใกล้ถึง (destination_alarm)
+# ArrivedWake — ปลุกเมื่อใกล้ถึง
 
-แอพ Flutter (Android + iOS) สำหรับปักหมุดจุดหมาย แล้วให้มือถือปลุกเมื่อเข้าใกล้ในระยะที่ตั้งไว้
+**ArrivedWake** แอพ Flutter (Android + iOS) สำหรับปักหมุดจุดหมาย แล้วให้มือถือปลุกเมื่อเข้าใกล้ในระยะที่ตั้งไว้
 
 ## ฟีเจอร์
 - แผนที่ OpenStreetMap: แตะเพื่อปักหมุด หรือค้นหาสถานที่ (ไม่ต้องใช้ API key)
@@ -37,5 +37,5 @@ flutter run            # เสียบมือถือจริง (GPS ใ�
 - **Android 14+**: Google Play อนุญาตสิทธิ์ `USE_FULL_SCREEN_INTENT` แค่กับแอพนาฬิกาปลุก/โทรศัพท์ ต้องกรอกแบบฟอร์มประกาศตอนส่งแอพ (แอพนี้เข้าข่ายนาฬิกาปลุก)
 - **Android Foreground Service (location)**: ต้องกรอก declaration ใน Play Console และแนบวิดีโออธิบายการใช้งาน
 - **แผนที่/ค้นหา**: tile และ Nominatim ของ OSM ห้ามใช้หนักใน production ควรเปลี่ยนไปใช้ผู้ให้บริการ tile (MapTiler, Stadia, Mapbox) หรือ Google Maps
-- เปลี่ยน `com.example.destination_alarm` เป็น bundle id ของคุณเอง
+- เปลี่ยน `com.arrivedwake.app` เป็น bundle id ของคุณเอง
 - แบตเตอรี่: ตอนนี้ใช้ GPS ความแม่นยำสูง + `distanceFilter` 15 ม. ถ้าจุดหมายยังไกลมาก ปรับให้ใช้ความแม่นยำต่ำก่อนแล้วค่อยเพิ่มเมื่อใกล้ จะประหยัดแบตขึ้นมาก

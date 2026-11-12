@@ -8,11 +8,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AlarmService.instance.init();
   final tracking = TrackingService(AlarmService.instance);
-  runApp(DestinationAlarmApp(tracking: tracking));
+  runApp(ArrivedWakeApp(tracking: tracking));
 }
 
-class DestinationAlarmApp extends StatelessWidget {
-  const DestinationAlarmApp({super.key, required this.tracking});
+class ArrivedWakeApp extends StatelessWidget {
+  const ArrivedWakeApp({super.key, required this.tracking});
 
   final TrackingService tracking;
 
@@ -20,7 +20,7 @@ class DestinationAlarmApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final seed = Colors.teal;
     return MaterialApp(
-      title: 'ปลุกเมื่อใกล้ถึง',
+      title: 'ArrivedWake',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorSchemeSeed: seed, useMaterial3: true),
       darkTheme: ThemeData(

@@ -1,4 +1,4 @@
-package com.example.destination_alarm
+package com.arrivedwake.app
 
 import io.flutter.embedding.android.FlutterActivity
 
