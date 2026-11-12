@@ -4,7 +4,9 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   test('formatDistance แสดงเมตร/กิโลเมตร', () {
     expect(formatDistance(250), '250 ม.');
-    expect(formatDistance(1500), '1.50 กม.');
+    expect(formatDistance(1000), '1 กม.');
+    expect(formatDistance(1500), '1.5 กม.');
+    expect(formatDistance(2345), '2.35 กม.');
     expect(formatDistance(12345), '12.3 กม.');
   });
 

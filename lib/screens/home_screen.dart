@@ -222,8 +222,24 @@ class _HomeScreenState extends State<HomeScreen> {
       return;
     }
     await _t.start();
+    _fitTrip();
     _snack('เริ่มติดตามแล้ว ปิดจอได้เลย จะปลุกเมื่อเหลือ '
         '${formatDistance(_t.target!.radiusMeters)}');
+  }
+
+  /// ซูมแผนที่ให้เห็นทั้งตำแหน่งปัจจุบันและจุดหมาย
+  void _fitTrip() {
+    final t = _t.target;
+    final p = _t.position;
+    if (t == null || p == null) return;
+    _map.fitCamera(CameraFit.coordinates(
+      coordinates: [
+        LatLng(t.latitude, t.longitude),
+        LatLng(p.latitude, p.longitude),
+      ],
+      padding: const EdgeInsets.fromLTRB(48, 110, 72, 48),
+      maxZoom: 16,
+    ));
   }
 
   void _showPermissionHelp(PermissionResult r) {

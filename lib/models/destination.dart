@@ -49,5 +49,7 @@ class Destination {
 
 String formatDistance(double meters) {
   if (meters < 1000) return '${meters.round()} ม.';
-  return '${(meters / 1000).toStringAsFixed(meters < 10000 ? 2 : 1)} กม.';
+  final km = (meters / 1000).toStringAsFixed(meters < 10000 ? 2 : 1);
+  // ตัดศูนย์ท้าย: 1.00 -> 1, 1.50 -> 1.5
+  return '${km.replaceFirst(RegExp(r'\.?0+$'), '')} กม.';
 }

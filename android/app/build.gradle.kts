@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.destination_alarm"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
